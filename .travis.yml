@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t alver/docker -f Dockerfile.dev .
 script:
-  - docker run alver/docker npm run test -- --coverage
+  - docker run alver/docker:latest npm run test -- --coverage
